@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="!scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+       .read-more-text {
+         display: none;
+       }
+       .read-more-text--show {
+         display: inline;
+       }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- header -->
+    <header class="text-purple-600 body-font cursor-pointer bg-purple-100 h-20 transition-all ease-in duration-300 sticky top-0">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row md:items-center">
+          <a class="flex justify-between title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <span class="ml-3 text-xl text-purple-600">MyPortfolio</span>
+            <span class="md:hidden text-purple-600">
+              <ion-icon name="menu-outline" onclick="Menu(this)" class="text-4xl"></ion-icon>
+            </span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap md:flex-row flex-col items-center text-base justify-center md:opacity-100 opacity-0 transition-all ease-in duration-300">
+            <a href="#home" class="mr-5 hover:text-purple-900">Home</a>
+            <a href="#about" class="mr-5 hover:text-purple-900">About</a>
+            <a href="#skills" class="mr-5 hover:text-purple-900">Skills</a>
+            <a href="#projects" class="mr-5 hover:text-purple-900">Projects</a>
+            <button class="inline-flex items-center bg-purple-600 text-white border-0 py-1 px-3 focus:outline-none hover:bg-purple-800 rounded text-base mt-4 md:mt-0">
+              <a href="#contact">Contact</a>
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </nav>
+        </div>
+      </header>
+
+      <!-- home section -->
+      <section class="text-gray-600 body-font" id="home">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col items-start text-left mb-16 md:mb-0">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Hey! I'm Zainab Farheen
+              <br class="hidden lg:inline-block">
+              <span class="text-lg tracking-wide mt-3 text-gray-600 capitalize">Web developer</span>
+            </h1>
+            <p class="mb-8 leading-relaxed">A Student & passionate web developer. Crafting Seamless Web Experiences with Code & Creativity. Welcome to my Digital Universe.</p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">
+                <a href="#about">Explore</a>
+              </button>
+              <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg items-center">
+                <a href="assets/doc/zainabresume.pdf" download>
+                  My Resume<i class="fa-solid fa-arrow-down ml-2"></i>
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="hero" src="assets/images/image1.png">
+          </div>
+        </div>
+      </section>
+
+      <!-- about section -->
+      <section class="text-gray-600 body-font" id="about">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col-reverse items-center">
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <img class="object-cover object-center rounded" alt="hero" src="assets/images/image2.png">
+          </div>
+          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 md:mb-0 mb-16 flex flex-col items-start text-left info">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 flex flex-col items-start">About Me
+              <br class="hidden lg:inline-block">
+              <div class="h-1 w-20 mt-2 bg-purple-500 rounded"></div>
+              <span class="text-lg tracking-wide mt-3 text-gray-600 capitalize">Greetings! I'm Zainab Farheen.</span>
+            </h1>
+            <p class="mb-8 leading-relaxed text-justify">
+              A web developer who finds joy in bringing digital dreams to life. My passion lies in crafting clean, efficient code and translating complex ideas into elegant web solutions. With a foundation in both frontend aesthetics and backend logic, 
+              <span class="read-more-text">
+                I am dedicated to creating immersive user experiences. Through continuous learning and innovation, I aim to contribute to the ever-evolving world of web development.
+              </span>
+            </p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded items-center read-more-btn">
+                Read more <i class="fa-solid fa-angles-right ml-1"></i>
+              </button>
+              <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded">
+                <a href="#projects">My portfolio</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- skills -->
+      <section class="text-gray-600 body-font" id="skills">
+        <div class="container px-5 py-24 mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="flex flex-wrap w-full mb-20 flex-col">
+            <div class="w-full mb-6 lg:mb-0">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">My Skills</h1>
+              <div class="h-1 w-20 bg-purple-500 rounded"></div>
+            </div>
+            <p class="w-full leading-relaxed text-gray-500 mt-5 text-justify">
+              From design to development and everything in between, I'm
+              equipped with the skills to bring your vision to life. With a
+              background in the skills mentioned below, I'm able to approach
+              design challenges from a unique perspective, resulting in
+              distinctive and memorable designs.
+            </p>
+          </div>
+          <div class="w-full rounded-lg overflow-hidden sm:mr-10 lg:pl-24 md:pl-16">
+            <div class="bg-white flex flex-wrap justify-center sm:p-6 rounded shadow-md text-5xl">
+              <i class="fa-brands fa-html5 basis-1/4 m-3"></i>
+              <i class="fa-brands fa-css3-alt basis-1/4 m-3"></i>
+              <i class="fa-brands fa-square-js basis-1/4 m-3"></i>
+              <i class="fa-brands fa-java basis-1/4 m-3"></i>
+              <i class="fa-brands fa-python basis-1/4 m-3"></i>
+              <i class="fa-brands fa-php basis-1/4 m-3"></i>
+              <i class="fa-brands fa-laravel basis-1/4 m-3"></i>
+              <i class="fa-brands fa-react basis-1/4 m-3"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- projects section -->
+      <section class="text-gray-600 body-font" id="projects">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20 justify-center">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0 flex flex-col justify-center items-center">
+              <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Portfolio</h1>
+              <div class="h-1 w-20 bg-purple-500 rounded"></div>
+            </div>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="assets/images/Register-form.png" alt="content">
+                <h3 class="tracking-widest text-purple-500 text-xs font-medium title-font">
+                  <a href="https://zfarheen-py.github.io/Register-form/" target="_main">CLICK HERE</a>
+                </h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Registration Form</h2>
+                <p class="leading-relaxed text-base">This is a Registration form page built using html and pure css.</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="assets/images/Website-template.png" alt="content">
+                <h3 class="tracking-widest text-purple-500 text-xs font-medium title-font">
+                  <a href="https://zfarheen-py.github.io/website-template/" target="_main">CLICK HERE</a>
+                </h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Website Template</h2>
+                <p class="leading-relaxed text-base">This is a Website template built using html and bootstrap, a css framework.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact section -->
+      <section class="text-gray-600 body-font" id="contact">
+        <div class="container px-5 py-24 mx-auto flex md:flex-nowrap flex-wrap">
+          <div class="lg:w-2/3 md:w-1/2 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start">
+            <div class="bg-white flex flex-wrap py-6 rounded shadow-md h-full -mx-10">
+              <img class="object-cover object-center rounded" alt="hero" src="assets/images/image5.png">
+            </div>
+          </div>
+          <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+            <h2 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Contact Me</h2>
+            <div class="h-1 w-20 bg-purple-500 rounded"></div>
+            <p class="leading-relaxed my-5 text-gray-600">
+              Interested in working together? Let's connect and explore
+              potential opportunities.
+            </p>
+            <div class="mb-4">
+              <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+              <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <div class="mb-4">
+              <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+              <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <div class="mb-4">
+              <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+              <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+            </div>
+            <button class="text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">Submit</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <span class="ml-3 text-purple-600 text-xl">MyPortfolio</span>
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 Zainab Farheen</p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500" href="https://github.com/zfarheen-py" target="_main">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a class="ml-3 text-gray-500" href="https://www.linkedin.com/in/zainabfarheen" target="_main">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="ml-3 text-gray-500" href="https://www.facebook.com/farheen.akhtar.1806" target="_main">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </span>
+        </div>
+      </footer>
+
+      <script src="js/script.js"></script>
+</body>
+</html>
